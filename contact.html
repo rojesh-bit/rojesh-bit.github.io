@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact Us | Nat &amp; Nishwe Trade Brokerage &amp; Advisory | Perth, WA</title>
+<meta name="description" content="Contact Nat & Nishwe for a confidential trade brokerage and market entry advisory consultation. Based in Wembley, Perth WA   serving all of Australia. Call +61 426 017 345."/>
+<meta name="keywords" content="contact Nat Nish, trade facilitation consultation, market entry advisory contact, Perth WA trade company, commercial structuring quote Australia"/>
+<link rel="icon" href="./public/favicon.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0B1E3C;--coral:#FF5A5F;--white:#fff;--light:#F8F9FA;--gray:#6B7280;--border:#E5E7EB;--font:'Inter',-apple-system,sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--navy);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{text-decoration:none;color:inherit}ul{list-style:none}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+
+/* WHITE NAVBAR */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:14px 0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);box-shadow:0 2px 20px rgba(0,0,0,.07);transition:all .3s}
+.navbar.scrolled{padding:11px 0;box-shadow:0 4px 30px rgba(0,0,0,.1)}
+.nav-container{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo img{height:42px;width:auto}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-link{font-size:14px;font-weight:500;color:var(--navy);transition:color .2s;position:relative}
+.nav-link:hover,.nav-link.active{color:var(--coral)}
+.nav-link::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--coral);transition:width .3s}
+.nav-link:hover::after,.nav-link.active::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;padding:10px 22px;background:var(--coral);color:#fff;font-size:14px;font-weight:600;border-radius:6px;transition:all .3s}
+.nav-cta:hover{background:#e04a4f;transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(255,255,255,.98);padding:16px 24px 24px;flex-direction:column;gap:4px;z-index:999;border-top:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.mobile-menu.open{display:flex}
+.mobile-menu .nav-link{padding:12px 0;font-size:15px;color:var(--navy);border-bottom:1px solid var(--border)}
+.mobile-menu .nav-cta{margin-top:12px;justify-content:center}
+
+/* PAGE HERO */
+.page-hero{position:relative;padding:130px 0 72px;background:var(--navy);overflow:hidden;text-align:center}
+.page-hero-bg{position:absolute;inset:0}
+.page-hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.18;mix-blend-mode:luminosity}
+.page-hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,30,60,.95) 0%,rgba(11,30,60,.75) 100%)}
+.page-hero-glow{position:absolute;top:20%;right:15%;width:350px;height:350px;background:radial-gradient(circle,rgba(255,90,95,.2) 0%,transparent 70%);filter:blur(40px)}
+.page-hero-content{position:relative;z-index:10}
+.breadcrumb{display:flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:600;color:rgba(255,255,255,.5);margin-bottom:20px;text-transform:uppercase;letter-spacing:.06em}
+.breadcrumb a{color:var(--coral)}.breadcrumb-sep{color:rgba(255,255,255,.3)}
+.page-hero h1{font-size:clamp(28px,5vw,60px);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
+.page-hero p{font-size:17px;color:rgba(255,255,255,.6);max-width:560px;margin:0 auto;line-height:1.65;font-weight:300}
+
+/* SECTIONS */
+.section{padding:88px 0}
+.section-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);margin-bottom:14px}
+.section-title{font-size:clamp(24px,4vw,46px);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.section-desc{font-size:17px;color:var(--gray);line-height:1.7}
+.section-light{background:var(--light)}
+
+/* CONTACT LAYOUT */
+.contact-layout{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}
+.contact-info h2{font-size:26px;font-weight:700;color:var(--navy);margin-bottom:28px}
+.contact-info p{font-size:15px;color:var(--gray);line-height:1.75;margin-bottom:36px}
+.cinfo-cards{display:flex;flex-direction:column;gap:14px}
+.cinfo-card{display:flex;align-items:flex-start;gap:18px;padding:22px;background:var(--light);border-radius:14px;border:1px solid var(--border);transition:border-color .3s,box-shadow .3s}
+.cinfo-card:hover{border-color:var(--coral);box-shadow:0 6px 20px rgba(0,0,0,.06)}
+.cinfo-icon{width:48px;height:48px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.cinfo-icon svg{width:20px;height:20px;stroke:var(--coral);fill:none;stroke-width:2}
+.cinfo-card h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px}
+.cinfo-card p,.cinfo-card a{font-size:13px;color:var(--gray);line-height:1.6}
+.cinfo-card a:hover{color:var(--coral)}
+
+/* FORM */
+.form-card{background:#fff;border-radius:20px;padding:44px;box-shadow:0 20px 60px rgba(0,0,0,.07);border:1px solid var(--border)}
+.form-card h3{font-size:24px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.form-card .subtitle{font-size:14px;color:var(--gray);margin-bottom:32px}
+.form-group{margin-bottom:20px}
+.form-label{display:block;font-size:12px;font-weight:600;color:var(--navy);margin-bottom:7px;text-transform:uppercase;letter-spacing:.04em}
+.form-input,.form-textarea,.form-select{width:100%;padding:13px 16px;background:var(--light);border:1.5px solid var(--border);border-radius:8px;font-size:14px;font-family:var(--font);color:var(--navy);transition:border-color .2s,box-shadow .2s;outline:none;appearance:none}
+.form-input:focus,.form-textarea:focus,.form-select:focus{border-color:var(--coral);box-shadow:0 0 0 3px rgba(255,90,95,.1);background:#fff}
+.form-input.error,.form-textarea.error{border-color:#ef4444}
+.form-textarea{min-height:140px;resize:vertical}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-error{font-size:12px;color:#ef4444;margin-top:4px}
+.form-check-group{display:flex;align-items:flex-start;gap:10px;padding:14px;background:var(--light);border-radius:8px;margin-bottom:22px}
+.form-check{width:17px;height:17px;accent-color:var(--coral);flex-shrink:0;margin-top:2px;cursor:pointer}
+.form-check-lbl{font-size:12px;color:var(--gray);line-height:1.5;cursor:pointer}
+.form-submit{width:100%;padding:16px;background:var(--coral);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;font-family:var(--font);cursor:pointer;transition:all .3s;box-shadow:0 0 20px rgba(255,90,95,.35)}
+.form-submit:hover{background:#e04a4f;transform:translateY(-1px);box-shadow:0 0 30px rgba(255,90,95,.55)}
+.form-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.form-success{display:none;padding:16px;background:#f0fdf4;border:1px solid #86efac;border-radius:8px;color:#15803d;font-weight:600;margin-bottom:14px;font-size:14px;text-align:center}
+
+/* WHY CONTACT */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:52px}
+.why-card{padding:28px;background:#fff;border-radius:14px;border:1px solid var(--border);text-align:center;transition:all .4s}
+.why-card:hover{transform:translateY(-6px);border-color:var(--coral);box-shadow:0 16px 40px rgba(0,0,0,.08)}
+.why-icon{width:56px;height:56px;background:rgba(255,90,95,.08);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;transition:background .3s}
+.why-card:hover .why-icon{background:var(--coral)}
+.why-icon svg{width:24px;height:24px;stroke:var(--coral);fill:none;stroke-width:2;transition:stroke .3s}
+.why-card:hover .why-icon svg{stroke:#fff}
+.why-card h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.why-card p{font-size:13px;color:var(--gray);line-height:1.6}
+
+/* FOOTER */
+.footer{background:#060f1e;color:rgba(255,255,255,.55);padding:64px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px}
+.footer-brand img{height:36px;margin-bottom:16px}
+.footer-brand p{font-size:13px;line-height:1.7;max-width:250px}
+.footer-col h4{font-size:11px;font-weight:700;color:#fff;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+.flinks{display:flex;flex-direction:column;gap:8px}
+.flink{font-size:13px;transition:color .2s}.flink:hover{color:var(--coral)}
+.fci{display:flex;align-items:flex-start;gap:8px;font-size:12px;margin-bottom:9px;line-height:1.5}
+.fci svg{width:14px;height:14px;stroke:var(--coral);fill:none;stroke-width:2;flex-shrink:0;margin-top:2px}
+.footer-btm{border-top:1px solid rgba(255,255,255,.07);padding:20px 0;display:flex;align-items:center;justify-content:space-between;font-size:12px}
+.ftm-links{display:flex;gap:20px}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s,transform .7s}
+.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .7s,transform .7s}
+.reveal-left.revealed{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(32px);transition:opacity .7s,transform .7s}
+.reveal-right.revealed{opacity:1;transform:translateX(0)}
+.stagger>*{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+.stagger.revealed>*{opacity:1;transform:translateY(0)}
+.stagger.revealed>*:nth-child(1){transition-delay:0s}
+.stagger.revealed>*:nth-child(2){transition-delay:.1s}
+.stagger.revealed>*:nth-child(3){transition-delay:.2s}
+
+@media(max-width:1024px){.contact-layout{grid-template-columns:1fr;gap:40px}.form-row{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:768px){.section{padding:64px 0}.nav-links{display:none}.hamburger{display:flex}.why-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr}.footer-btm{flex-direction:column;gap:10px;text-align:center}}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="./index.html" class="nav-logo"><img src="./public/logo.webp" alt="Nat &amp; Nish"/></a>
+    <div class="nav-links">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="./services.html" class="nav-link">Services</a>
+      <a href="./about.html" class="nav-link">About</a>
+      <a href="./contact.html" class="nav-link active">Contact</a>
+      <a href="./contact.html" class="nav-cta">Request Consultation</a>
+    </div>
+    <button class="hamburger" id="hb" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mm">
+  <a href="./index.html" class="nav-link">Home</a>
+  <a href="./services.html" class="nav-link">Services</a>
+  <a href="./about.html" class="nav-link">About</a>
+  <a href="./contact.html" class="nav-link active">Contact</a>
+  <a href="./contact.html" class="nav-cta">Request Consultation</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"><img src="./public/images/services-bg.png" alt="Contact Nat & Nishwe trade advisory"/></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-glow"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="breadcrumb"><a href="./index.html">Home</a><span class="breadcrumb-sep">/</span><span style="color:#fff">Contact</span></div>
+      <h1>Engage With Us Confidentially</h1>
+      <p>At Nat &amp; Nish, professionalism and trust are at the core of every engagement. Your trade requirements are handled with complete care and discretion.</p>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <div class="reveal-left">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Corporate Headquarters</h2>
+        <p class="section-desc" style="margin-bottom:36px">Whether you need operational trade support or a long term trade strategy, our advisors are ready to help. Reach out through any channel below.</p>
+        <div class="cinfo-cards">
+          <div class="cinfo-card">
+            <div class="cinfo-icon"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+            <div><h4>Office Address</h4><p>14/237 Cambridge Street,<br>Wembley WA 6014,<br>Australia</p></div>
+          </div>
+          <div class="cinfo-card">
+            <div class="cinfo-icon"><svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
+            <div><h4>Direct Phone Line</h4><a href="tel:+61426017345">+61 426 017 345</a><p style="margin-top:4px">Mon Fri, 8am 6pm AWST</p></div>
+          </div>
+          <div class="cinfo-card">
+            <div class="cinfo-icon"><svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+            <div><h4>Email Inquiries</h4><a href="mailto:info@natnish.com">info@natnish.com</a><p style="margin-top:4px">Response within 24 business hours</p></div>
+          </div>
+          <div class="cinfo-card">
+            <div class="cinfo-icon"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+            <div><h4>Business Hours</h4><p>Monday   Friday: 8:00am   6:00pm AWST<br>Saturday: By appointment only</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="form-card">
+          <h3>Request a Consultation</h3>
+          <p class="subtitle">Fill in your details and a senior advisor will contact you within one business day.</p>
+          <div class="form-success" id="formSuccess">Your message has been sent successfully. We'll be in touch within one business day.</div>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label" for="fname">First Name</label><input class="form-input" type="text" id="fname" placeholder="John"/><div class="form-error" id="fnameErr"></div></div>
+              <div class="form-group"><label class="form-label" for="lname">Last Name</label><input class="form-input" type="text" id="lname" placeholder="Smith"/><div class="form-error" id="lnameErr"></div></div>
+            </div>
+            <div class="form-group"><label class="form-label" for="org">Organisation / Company</label><input class="form-input" type="text" id="org" placeholder="Your company name"/></div>
+            <div class="form-group"><label class="form-label" for="email">Email Address</label><input class="form-input" type="email" id="email" placeholder="john@company.com.au"/><div class="form-error" id="emailErr"></div></div>
+            <div class="form-group"><label class="form-label" for="phone">Phone Number</label><input class="form-input" type="tel" id="phone" placeholder="+61 4XX XXX XXX"/></div>
+            <div class="form-group"><label class="form-label" for="service">Service of Interest</label><select class="form-select" id="service"><option value="">Select a service...</option><option>trade facilitation &amp; Execution</option><option>deal structuring &amp; Planning</option><option>Market Entry for trade operations</option><option>Risk, Compliance &amp; compliance Standards</option><option>Custom Engagement</option><option>General Inquiry</option></select></div>
+            <div class="form-group"><label class="form-label" for="message">Message / Requirements</label><textarea class="form-textarea" id="message" placeholder="Describe your trade needs, location, scope of work, or any specific challenges you face..."></textarea><div class="form-error" id="msgErr"></div></div>
+            <div class="form-check-group"><input type="checkbox" class="form-check" id="privacy"><label class="form-check-lbl" for="privacy">I consent to the confidential processing of my details as per the Nat &amp; Nishwe Privacy Policy. My information will not be shared with third parties.</label></div>
+            <div class="form-error" id="privErr" style="margin-bottom:12px"></div>
+            <button type="submit" class="form-submit" id="submitBtn">Send My Consultation Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CONTACT US -->
+<section class="section section-light">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Why Engage Us</span>
+      <h2 class="section-title">What to Expect When You Reach Out</h2>
+      <p class="section-desc" style="margin:0 auto">Our engagement process is designed to be simple, confidential, and highly responsive.</p>
+    </div>
+    <div class="why-grid stagger">
+      <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h3>24-Hour Response</h3><p>We respond to all inquiries within one business day. Urgent needs are prioritised through our direct phone line.</p></div>
+      <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg></div><h3>Fully Confidential</h3><p>All information shared with us is handled with complete discretion. Your business details are never disclosed to third parties.</p></div>
+      <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></div><h3>Tailored Proposal</h3><p>Every consultation results in a proposal specific to your needs   not a generic quote, but a structured advisory plan.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="./public/nat-nish-white-logo.png" alt="Nat &amp; Nish"/><p>A strategic partner in global trade excellence, risk reduction, and global trade brokerage across Australia.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><div class="flinks"><a href="./index.html" class="flink">Home</a><a href="./services.html" class="flink">Services</a><a href="./about.html" class="flink">About</a><a href="./contact.html" class="flink">Contact</a></div></div>
+      <div class="footer-col"><h4>Services</h4><div class="flinks"><a href="./servicedetails.html?service=trade-trade-execution" class="flink">trade facilitation</a><a href="./servicedetails.html?service=trade-strategy-planning" class="flink">Strategy &amp; Planning</a><a href="./servicedetails.html?service=market-entry-trade-operations" class="flink">Market Entry</a><a href="./servicedetails.html?service=Risk compliance-compliance-standards" class="flink">Risk &amp; Compliance</a></div></div>
+      <div class="footer-col"><h4>Contact</h4><div class="fci"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>14/237 Cambridge St, Wembley WA 6014</div><div class="fci"><svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><a href="tel:+61426017345" class="flink">+61 426 017 345</a></div><div class="fci"><svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg><a href="mailto:info@natnish.com" class="flink">info@natnish.com</a></div></div>
+    </div>
+    <div class="footer-btm"><span>&copy; 2024 Nat &amp; Nishwe Trade Brokerage &amp; Advisory. All rights reserved.</span><div class="ftm-links"><a href="#" class="flink">Privacy Policy</a><a href="#" class="flink">Terms</a>
+      </div></div>
+  </div>
+</footer>
+
+<script>
+// NAVBAR
+const nb=document.getElementById('navbar');
+window.addEventListener('scroll',()=>nb.classList.toggle('scrolled',window.scrollY>40));
+// HAMBURGER
+const hb=document.getElementById('hb'),mm=document.getElementById('mm');
+hb.addEventListener('click',()=>{hb.classList.toggle('open');mm.classList.toggle('open')});
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hb.classList.remove('open');mm.classList.remove('open')}));
+// REVEAL
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('revealed');obs.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.stagger').forEach(el=>obs.observe(el));
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+// FORM
+const form=document.getElementById('contactForm');
+function setErr(id,msg){document.getElementById(id).textContent=msg}
+function clearErrs(){['fnameErr','lnameErr','emailErr','msgErr','privErr'].forEach(id=>{if(document.getElementById(id))document.getElementById(id).textContent=''})}
+form.addEventListener('submit',e=>{
+  e.preventDefault();clearErrs();
+  const fn=document.getElementById('fname').value.trim();
+  const ln=document.getElementById('lname').value.trim();
+  const em=document.getElementById('email').value.trim();
+  const msg=document.getElementById('message').value.trim();
+  const prv=document.getElementById('privacy').checked;
+  let ok=true;
+  if(fn.length<2){setErr('fnameErr','Please enter your first name.');ok=false}
+  if(ln.length<2){setErr('lnameErr','Please enter your last name.');ok=false}
+  if(!em||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){setErr('emailErr','Please enter a valid email address.');ok=false}
+  if(msg.length<10){setErr('msgErr','Please provide more details (at least 10 characters).');ok=false}
+  if(!prv){setErr('privErr','You must agree to the privacy policy to proceed.');ok=false}
+  if(!ok)return;
+  const btn=document.getElementById('submitBtn');
+  btn.disabled=true;btn.textContent='Sending...';
+  setTimeout(()=>{
+    document.getElementById('formSuccess').style.display='block';
+    form.reset();btn.disabled=false;btn.textContent='Send My Consultation Request';
+  },1200);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Us | Nat &amp; Nishwe Trade Brokerage &amp; Advisory | Perth, WA Australia</title>
+<meta name="description" content="Learn about Nat & Nishwe   Australia's strategic trade and market entry advisory firm. Our team, our mission, and our commitment to operational excellence across commercial and residential environments."/>
+<meta name="keywords" content="about Nat Nish, trade brokerage company Australia, market entry advisory firm Perth, professional trade consultants WA"/>
+<link rel="icon" href="./public/favicon.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0B1E3C;--coral:#FF5A5F;--white:#fff;--light:#F8F9FA;--gray:#6B7280;--border:#E5E7EB;--font:'Inter',-apple-system,sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--navy);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{text-decoration:none;color:inherit}ul{list-style:none}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+
+/* NAVBAR   white on all inner pages */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:14px 0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);box-shadow:0 2px 20px rgba(0,0,0,.07);transition:all .3s}
+.navbar.scrolled{padding:11px 0;box-shadow:0 4px 30px rgba(0,0,0,.1)}
+.nav-container{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo img{height:42px;width:auto}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-link{font-size:14px;font-weight:500;color:var(--navy);transition:color .2s;position:relative}
+.nav-link:hover,.nav-link.active{color:var(--coral)}
+.nav-link::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--coral);transition:width .3s}
+.nav-link:hover::after,.nav-link.active::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;padding:10px 22px;background:var(--coral);color:#fff;font-size:14px;font-weight:600;border-radius:6px;transition:all .3s;box-shadow:0 0 16px rgba(255,90,95,.35)}
+.nav-cta:hover{background:#e04a4f;transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(255,255,255,.98);padding:16px 24px 24px;flex-direction:column;gap:4px;z-index:999;border-top:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.mobile-menu.open{display:flex}
+.mobile-menu .nav-link{padding:12px 0;font-size:15px;color:var(--navy);border-bottom:1px solid var(--border)}
+.mobile-menu .nav-cta{margin-top:12px;justify-content:center}
+
+/* PAGE HERO */
+.page-hero{position:relative;padding:140px 0 80px;background:var(--navy);overflow:hidden}
+.page-hero-bg{position:absolute;inset:0}
+.page-hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.2;mix-blend-mode:luminosity}
+.page-hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,30,60,.95) 0%,rgba(11,30,60,.7) 60%,rgba(255,90,95,.15) 100%)}
+.page-hero-content{position:relative;z-index:10}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:rgba(255,255,255,.5);margin-bottom:20px;text-transform:uppercase;letter-spacing:.06em}
+.breadcrumb a{color:var(--coral);transition:color .2s}.breadcrumb a:hover{color:#fff}
+.breadcrumb-sep{color:rgba(255,255,255,.3)}
+.page-hero h1{font-size:clamp(30px,5vw,64px);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-.02em;margin-bottom:18px}
+.page-hero p{font-size:17px;color:rgba(255,255,255,.65);max-width:580px;line-height:1.65;font-weight:300}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 30px;font-size:15px;font-weight:600;border-radius:6px;border:none;cursor:pointer;transition:all .3s;font-family:var(--font);text-decoration:none}
+.btn-primary{background:var(--coral);color:#fff;box-shadow:0 0 22px rgba(255,90,95,.4)}
+.btn-primary:hover{background:#e04a4f;transform:translateY(-2px);box-shadow:0 0 34px rgba(255,90,95,.6)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:#152a51;transform:translateY(-1px);box-shadow:0 8px 24px rgba(11,30,60,.25)}
+
+/* SECTIONS */
+.section{padding:88px 0}
+.section-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);margin-bottom:14px}
+.section-title{font-size:clamp(26px,4vw,48px);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
+.section-desc{font-size:17px;color:var(--gray);line-height:1.7;max-width:620px}
+.text-center{text-align:center}.text-center .section-desc{margin:0 auto}
+.section-light{background:var(--light)}
+.section-dark{background:var(--navy)}
+
+/* STORY GRID */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.story-image{position:relative;border-radius:16px;overflow:hidden}
+.story-image img{width:100%;height:520px;object-fit:cover;border-radius:16px}
+.story-img-badge{position:absolute;bottom:24px;left:24px;background:rgba(11,30,60,.95);color:#fff;padding:14px 20px;border-radius:12px;border-left:4px solid var(--coral)}
+.story-img-badge .n{font-size:32px;font-weight:800;color:var(--coral);line-height:1}
+.story-img-badge .l{font-size:11px;color:rgba(255,255,255,.6);margin-top:2px}
+
+/* MISSION + VISION */
+.mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:52px}
+.mv-card{padding:36px;border-radius:16px;border:1px solid var(--border);position:relative;overflow:hidden;transition:transform .4s,box-shadow .4s}
+.mv-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.09);border-color:var(--coral)}
+.mv-card-num{font-size:60px;font-weight:800;color:var(--light);position:absolute;top:-10px;right:16px;line-height:1;pointer-events:none}
+.mv-card h3{font-size:20px;font-weight:700;color:var(--navy);margin-bottom:12px;position:relative}
+.mv-card p{font-size:14px;color:var(--gray);line-height:1.7;position:relative}
+.mv-card .bar{width:40px;height:4px;border-radius:2px;background:var(--coral);margin-bottom:16px}
+
+/* VALUES */
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.val-card{background:#fff;border-radius:16px;padding:32px 26px;border:1px solid var(--border);text-align:center;transition:all .4s}
+.val-card:hover{transform:translateY(-8px);border-color:var(--coral);box-shadow:0 20px 40px rgba(0,0,0,.09)}
+.val-icon{width:64px;height:64px;background:rgba(255,90,95,.08);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;transition:background .3s}
+.val-card:hover .val-icon{background:var(--coral)}
+.val-icon svg{width:28px;height:28px;stroke:var(--coral);fill:none;stroke-width:1.8;transition:stroke .3s}
+.val-card:hover .val-icon svg{stroke:#fff}
+.val-card h3{font-size:17px;font-weight:700;color:var(--navy);margin-bottom:10px}
+.val-card p{font-size:13px;color:var(--gray);line-height:1.65}
+
+/* IMAGE FEATURES SECTION */
+.imgfeat-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.imgfeat-img{border-radius:16px;overflow:hidden;position:relative}
+.imgfeat-img img{width:100%;height:480px;object-fit:cover}
+.imgfeat-list{display:flex;flex-direction:column;gap:22px}
+.imgfeat-item{display:flex;align-items:flex-start;gap:16px;padding:20px;border-radius:12px;border:1px solid var(--border);background:#fff;transition:border-color .3s,box-shadow .3s}
+.imgfeat-item:hover{border-color:var(--coral);box-shadow:0 6px 24px rgba(0,0,0,.06)}
+.imgfeat-icon{width:48px;height:48px;background:rgba(255,90,95,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.imgfeat-icon svg{width:22px;height:22px;stroke:var(--coral);fill:none;stroke-width:2}
+.imgfeat-item h4{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:5px}
+.imgfeat-item p{font-size:13px;color:var(--gray);line-height:1.6}
+
+/* STATS */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);border-radius:16px;overflow:hidden;margin-top:52px}
+.stat-box{background:#fff;padding:36px 24px;text-align:center}
+.stat-num{font-size:44px;font-weight:800;color:var(--navy);letter-spacing:-.03em;line-height:1;margin-bottom:8px}
+.stat-num span{color:var(--coral)}
+.stat-lbl{font-size:12px;color:var(--gray);font-weight:500;line-height:1.45}
+
+/* CTA */
+.cta-sec{background:linear-gradient(135deg,var(--navy) 0%,#152a51 100%);padding:88px 0;text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(255,90,95,.15) 0%,transparent 70%);filter:blur(50px)}
+
+/* FOOTER */
+.footer{background:#060f1e;color:rgba(255,255,255,.55);padding:64px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px}
+.footer-brand img{height:36px;margin-bottom:16px}
+.footer-brand p{font-size:13px;line-height:1.7;max-width:250px}
+.footer-col h4{font-size:11px;font-weight:700;color:#fff;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+.flinks{display:flex;flex-direction:column;gap:8px}
+.flink{font-size:13px;transition:color .2s}.flink:hover{color:var(--coral)}
+.fci{display:flex;align-items:flex-start;gap:8px;font-size:12px;margin-bottom:9px;line-height:1.5}
+.fci svg{width:14px;height:14px;stroke:var(--coral);fill:none;stroke-width:2;flex-shrink:0;margin-top:2px}
+.footer-btm{border-top:1px solid rgba(255,255,255,.07);padding:20px 0;display:flex;align-items:center;justify-content:space-between;font-size:12px}
+.ftm-links{display:flex;gap:20px}
+
+/* SCROLL REVEAL */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s,transform .7s}
+.reveal.revealed{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .7s,transform .7s}
+.reveal-left.revealed{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(32px);transition:opacity .7s,transform .7s}
+.reveal-right.revealed{opacity:1;transform:translateX(0)}
+.stagger>*{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+.stagger.revealed>*{opacity:1;transform:translateY(0)}
+.stagger.revealed>*:nth-child(1){transition-delay:0s}
+.stagger.revealed>*:nth-child(2){transition-delay:.1s}
+.stagger.revealed>*:nth-child(3){transition-delay:.2s}
+.stagger.revealed>*:nth-child(4){transition-delay:.3s}
+.stagger.revealed>*:nth-child(5){transition-delay:.4s}
+.stagger.revealed>*:nth-child(6){transition-delay:.5s}
+
+@media(max-width:1024px){.story-grid,.imgfeat-grid{grid-template-columns:1fr;gap:40px}.mv-grid{grid-template-columns:1fr;gap:18px}.stats-row{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr;gap:28px}.values-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.section{padding:64px 0}.nav-links{display:none}.hamburger{display:flex}.values-grid{grid-template-columns:1fr}.stats-row{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.stats-row{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}.footer-btm{flex-direction:column;gap:10px;text-align:center}}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="./index.html" class="nav-logo"><img src="./public/logo.webp" alt="Nat &amp; Nishwe trade advisory"/></a>
+    <div class="nav-links">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="./services.html" class="nav-link">Services</a>
+      <a href="./about.html" class="nav-link active">About</a>
+      <a href="./contact.html" class="nav-link">Contact</a>
+      <a href="./contact.html" class="nav-cta">Request Consultation</a>
+    </div>
+    <button class="hamburger" id="hb" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mm">
+  <a href="./index.html" class="nav-link">Home</a>
+  <a href="./services.html" class="nav-link">Services</a>
+  <a href="./about.html" class="nav-link active">About</a>
+  <a href="./contact.html" class="nav-link">Contact</a>
+  <a href="./contact.html" class="nav-cta">Request Consultation</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"><img src="./public/images/about-bg.png" alt="Nat & Nishwe   Strategic Advisory in Global Trade and Negotiation"/></div>
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="breadcrumb"><a href="./index.html">Home</a><span class="breadcrumb-sep">/</span><span style="color:#fff">About Us</span></div>
+      <h1>Strategic Advisory in Global Trade and Negotiation</h1>
+      <p>Helping clients navigate complex global markets, structure high value deals, and build long term strategic advantage.</p>
+    </div>
+  </div>
+</div>
+
+<!-- STORY SECTION -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-image reveal-left">
+        <img src="./public/images/consulting.png" alt="Nat & Nishwe advisory team at work   strategic negotiation advisory"/>
+        <div class="story-img-badge"><div class="n">10+</div><div class="l">Years of Excellence</div></div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-tag">Who We Are</span>
+        <h2 class="section-title">Bridging the gap between strategic intent and real world execution</h2>
+        <p style="font-size:16px;color:var(--gray);line-height:1.75;margin-bottom:20px">Nat &amp; Nishwe is a strategic consultancy specializing in commodities trading, negotiations, and business facilitation. We operate at the intersection of opportunity and execution, helping clients navigate complex global markets, structure high value deals, and build long term strategic advantage.</p>
+        <p style="font-size:16px;color:var(--gray);line-height:1.75;margin-bottom:20px">We are a team of advisors, negotiators, and market specialists with experience across commodities trading, international business structuring, regulatory environments, and cross border transactions.</p>
+        <p style="font-size:16px;color:var(--gray);line-height:1.75;margin-bottom:36px">Our background spans multiple industries and jurisdictions, giving us the ability to understand both global systems and local realities. We operate with a mindset built on discretion, accuracy, and long term thinking.</p>
+        <a href="./contact.html" class="btn btn-primary">Start a Conversation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION & VISION (Philosophy) -->
+<section class="section section-light">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Our Philosophy</span>
+      <h2 class="section-title">Built on Clarity, Strength, and Trust</h2>
+      <p class="section-desc" style="margin:0 auto">We believe that successful outcomes are built on three core principles that guide our engagement.</p>
+    </div>
+    <div class="values-grid stagger">
+      <div class="val-card" style="padding:40px;background:#fff;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.04);position:relative;overflow:hidden">
+        <h3>Clarity in Strategy</h3>
+        <p style="color:var(--gray);font-size:14px;line-height:1.6">Every engagement begins with understanding the real objective behind the opportunity.</p>
+      </div>
+      <div class="val-card" style="padding:40px;background:#fff;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.04);position:relative;overflow:hidden">
+        <h3>Strength in Execution</h3>
+        <p style="color:var(--gray);font-size:14px;line-height:1.6">A strategy is only as valuable as its implementation. We stay involved through execution to ensure alignment.</p>
+      </div>
+      <div class="val-card" style="padding:40px;background:#fff;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.04);position:relative;overflow:hidden">
+        <h3>Trust in Relationships</h3>
+        <p style="color:var(--gray);font-size:14px;line-height:1.6">Global trade and negotiation are built on relationships that must be maintained with integrity and consistency.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE + FEATURES (What Defines Our Team) -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="imgfeat-grid">
+      <div class="imgfeat-img reveal-left">
+        <img src="./public/images/service-detail-bg.png" alt="Professional trade brokerage and trade operations   Nat & Nishwe"/>
+      </div>
+      <div class="reveal-right">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">What Defines Our Team</h2>
+        <div class="imgfeat-list">
+          <div class="imgfeat-item">
+            <div class="imgfeat-icon"><svg viewBox="0 0 24 24"><path d="M12 2l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944A11.955 11.955 0 003.382 5.984 12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+            <div><h4>Commodities &amp; Market Analysis</h4><p>Commodities trading and market analysis.</p></div>
+          </div>
+          <div class="imgfeat-item">
+            <div class="imgfeat-icon"><svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></div>
+            <div><h4>Legal &amp; Advisory</h4><p>Corporate and international legal advisory.</p></div>
+          </div>
+          <div class="imgfeat-item">
+            <div class="imgfeat-icon"><svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+            <div><h4>Institutional Negotiation</h4><p>Public and private sector negotiations.</p></div>
+          </div>
+          <div class="imgfeat-item">
+            <div class="imgfeat-icon"><svg viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+            <div><h4>Cross Border Value</h4><p>Cross border deal structuring and execution facilitation.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES (What We Stand For / Global Perspective) -->
+<section class="section section-light">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Value Creation</span>
+      <h2 class="section-title">Our Global Perspective &amp; Standpoint</h2>
+      <p class="section-desc" style="margin:0 auto">We work across diverse markets including energy, metals, agriculture, and sustainability linked commodities.</p>
+    </div>
+    <div class="values-grid stagger">
+      <div class="val-card"><h3>Integrity</h3><p>We do what we say. Integrity in every engagement.</p></div>
+      <div class="val-card"><h3>Precision</h3><p>Precision in every decision we take and deal we structure.</p></div>
+      <div class="val-card"><h3>Discretion</h3><p>Total discretion and confidentiality in every transaction.</p></div>
+      <div class="val-card"><h3>Value Creation</h3><p>Measurable and sustainable value creation in every outcome.</p></div>
+      <div class="val-card"><h3>Commitment</h3><p>We are more than advisors. We act as strategic partners to execute high value deals.</p></div>
+      <div class="val-card"><h3>Trust</h3><p>Our goal is simple. To help clients move from opportunity to outcome with confidence.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec reveal">
+  <div class="container" style="position:relative;z-index:1;text-align:center">
+    <span class="section-tag" style="display:block;margin-bottom:14px">Work With Us</span>
+    <h2 style="font-size:clamp(24px,4vw,46px);font-weight:800;color:#fff;margin-bottom:18px;letter-spacing:-.02em">Ready to Transform Your trade Operations?</h2>
+    <p style="font-size:17px;color:rgba(255,255,255,.6);max-width:500px;margin:0 auto 36px;line-height:1.65">Engage our advisory team for a confidential consultation tailored to your specific trade needs.</p>
+    <a href="./contact.html" class="btn btn-primary" style="font-size:16px;padding:15px 38px">Request a Consultation</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="./public/nat-nish-white-logo.png" alt="Nat &amp; Nish"/><p>A strategic partner in global trade excellence, risk reduction, and global trade brokerage across Australia.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><div class="flinks"><a href="./index.html" class="flink">Home</a><a href="./services.html" class="flink">Services</a><a href="./about.html" class="flink">About</a><a href="./contact.html" class="flink">Contact</a></div></div>
+      <div class="footer-col"><h4>Services</h4><div class="flinks"><a href="./servicedetails.html?service=trade-trade-execution" class="flink">trade facilitation</a><a href="./servicedetails.html?service=trade-strategy-planning" class="flink">Strategy &amp; Planning</a><a href="./servicedetails.html?service=market-entry-trade-operations" class="flink">Market Entry</a><a href="./servicedetails.html?service=Risk compliance-compliance-standards" class="flink">Risk &amp; Compliance</a><a href="./servicedetails.html?service=custom-engagements" class="flink">Custom Engagements</a></div></div>
+      <div class="footer-col"><h4>Contact</h4><div class="fci"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>14/237 Cambridge St, Wembley WA 6014</div><div class="fci"><svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><a href="tel:+61426017345" class="flink">+61 426 017 345</a></div><div class="fci"><svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg><a href="mailto:info@natnish.com" class="flink">info@natnish.com</a></div></div>
+    </div>
+    <div class="footer-btm"><span>&copy; 2024 Nat &amp; Nishwe Trade Brokerage &amp; Advisory. All rights reserved.</span><div class="ftm-links"><a href="#" class="flink">Privacy Policy</a><a href="#" class="flink">Terms</a>
+      </div></div>
+  </div>
+</footer>
+
+<script>
+const nb=document.getElementById('navbar');
+window.addEventListener('scroll',()=>nb.classList.toggle('scrolled',window.scrollY>40));
+const hb=document.getElementById('hb'),mm=document.getElementById('mm');
+hb.addEventListener('click',()=>{hb.classList.toggle('open');mm.classList.toggle('open')});
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hb.classList.remove('open');mm.classList.remove('open')}));
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('revealed');obs.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.stagger').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
